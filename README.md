@@ -1,2 +1,0 @@
-# ramadhankukuh.github.io
-Y

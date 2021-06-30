@@ -1,69 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="src/css/app.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Raka Rasell | Landing Page</title>
+
+	<link rel="icon" href="assets/logo.png" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <h1>Coming Soon :3</h1>
-
-    <script src="src/js/app.js"></script>
+	<main>
+		<div class="intro">Hello, I'm Rasell!</div>
+		<div class="tagline">React Dev | Video Editor | Microblogger</div>
+		<div class="icons-social">
+			<a target="_blank" href="https://github.com/raselldev"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://dev.to/raselldev"><i class="fab fa-dev"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/rrsll"><i class="fab fa-linkedin-in"></i></a>
+			<a target="_blank" href="https://medium.com/@rakarasell"><i class="fab fa-medium-m"></i></a>
+			<a target="_blank" href="https://instagram.com/rakarasell"><i class="fab fa-instagram"></i></a>
+    	</div>
+		<div class="portfolio">
+			<h2>Portofolio App:</h2>
+			<div class="row">
+				<div class="column">
+					<a href="https://netflix-clone-cd386.web.app/"><img src="assets/netflix.png" alt="Netflix Clone"></a>
+					<p class="detail">Netflix Clone</p>
+				</div>
+				<div class="column">
+					<a href="https://facebook-messenger-clone-95627.web.app/"><img src="assets/fb.png" alt="Facebook Messenger Clone"></a>
+					<p class="detail">Facebook Messenger Clone</p>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
-
 </html>
-
-<style type="text/css" scoped="scoped">
-:root {  
---main-bg-color: #ffffff; /* background */  
---text-color: #0000ff; /* warna text (biru) */ 
---text-dark-color: #000000; /* warna text gelap */ 
---font-txt: 'Poppins' , Sans-serif; /* font text */ 
---font-id: 'Lobster', cursive; /* font hari raya idul fitri */ 
-}
-
-#idulfitri2021{background:var(--main-bg-color);color:var(--text-color);font-family:var(--font-txt);font-size:15px;text-transform:capitalize;text-align:center;padding:20px;font-weight:normal;border-radius:3px;line-height:20px}
-.teks {color:var(--text-dark-color)}
-.idulFitri{font-size:20px;display:block;font-weight:normal;color:var(--text-color);font-family: var(--font-id)}
-
-/* Font */
-@font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2')}
-@font-face{font-family:'Lobster';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoKmMw.woff2) format('woff2')}
-
-</style>
-<div id="idulfitri2021">
-<span id="countdown"></span>
-</div>
-<script type='text/javascript'>
-//<![CDATA[
-// set the date we're counting down to
-var target_date = new Date("Jan 1, 2022").getTime();
-// variables for time units
-var days, hours, minutes, seconds;
-// get tag element
-var countdown = document.getElementById("countdown");
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-
-    // format countdown string + set tag value
-  countdown.innerHTML = days + " <span class=\'teks\'>hari</span> " + hours + " <span class=\'teks\'>jam</span> "
-  + minutes + " <span class=\'teks\'>menit</span> " + seconds + " <span class=\'teks\'>detik menuju </span><span class=\'idulFitri\'>tahun baru 2022</span>";
-}, 1000);
-//]]>
-</script>

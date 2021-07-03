@@ -93,12 +93,4 @@
   </body>
 </html>
 
-<script src='https://firebase.com/js/client/2.3.2/firebase.js' type='text/javascript'></script>
-<script type='text/javascript'>//<![CDATA[
-// View counter
-$.each($(".post-view[data-id]"),function(c,f){var b=$(f).parent().find("#postviews").addClass("view-load"),d=new Firebase("https://console.firebase.google.com/u/0/project/blog-a59d2/database/blog-a59d2-default-rtdb/data/"+$(f).attr("data-id"));d.once("value",function(e){var h=e.val(),g=!1;null==h&&(h={},h.value=0,h.url=window.location.href,h.id=$(f).attr("data-id"),g=!0),b.removeClass("view-load").text(h.value),h.value++,"/"!=window.location.pathname&&(g?d.set(h):d.child("value").set(h.value))})});
-//]]></script>
-
-<span class='post-view' expr:data-id='data:post.id'><i class='fa fa-eye'/> 
-<span class='view-load' id='postviews'>0</span> Viewers
-</span>
+<a href="https://info.flagcounter.com/SnSN"><img src="https://s11.flagcounter.com/count2/SnSN/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_1/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
